@@ -1,7 +1,7 @@
 {
   "name": "littleheartsclothing.com",
   "version": "0.1.0",
-  "homepage": "https://j1me.github.io/littleheartsclothing",
+  "homepage": "https://littleheartsclothing.com",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

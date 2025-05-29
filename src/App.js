@@ -6,7 +6,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 function App() {
   return (
-    <Router basename="/littleheartsclothing">
+    <Router>
       <div className="min-h-screen bg-pastel-bg">
         <Routes>
           <Route path="/" element={<HomePage />} />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import InstagramPosts from '../components/InstagramPosts';
+import ProductGrid from '../components/ProductGrid';
 
 const HomePage = () => {
   return (
@@ -18,6 +19,11 @@ const HomePage = () => {
       <main className="flex-1 px-4 pb-8">
         <div className="max-w-md mx-auto space-y-8">
           
+          {/* Product Collection Section */}
+          <section className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-sm">
+            <ProductGrid />
+          </section>
+
           {/* Instagram Section */}
           <section className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-sm">
             <h2 className="text-lg font-medium text-gray-800 mb-4 text-center">

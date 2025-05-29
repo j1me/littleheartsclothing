@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/littleheartsclothing/static/css/main.fdf0735a.css",
-    "main.js": "/littleheartsclothing/static/js/main.6f18023a.js",
-    "static/js/453.50377f1b.chunk.js": "/littleheartsclothing/static/js/453.50377f1b.chunk.js",
-    "index.html": "/littleheartsclothing/index.html",
-    "main.fdf0735a.css.map": "/littleheartsclothing/static/css/main.fdf0735a.css.map",
-    "main.6f18023a.js.map": "/littleheartsclothing/static/js/main.6f18023a.js.map",
-    "453.50377f1b.chunk.js.map": "/littleheartsclothing/static/js/453.50377f1b.chunk.js.map"
+    "main.css": "/static/css/main.fdf0735a.css",
+    "main.js": "/static/js/main.a4564752.js",
+    "static/js/453.50377f1b.chunk.js": "/static/js/453.50377f1b.chunk.js",
+    "index.html": "/index.html",
+    "main.fdf0735a.css.map": "/static/css/main.fdf0735a.css.map",
+    "main.a4564752.js.map": "/static/js/main.a4564752.js.map",
+    "453.50377f1b.chunk.js.map": "/static/js/453.50377f1b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fdf0735a.css",
-    "static/js/main.6f18023a.js"
+    "static/js/main.a4564752.js"
   ]
 }

@@ -108,6 +108,16 @@ const AboutPage = () => {
               </svg>
             </a>
           </div>
+
+          {/* Privacy Policy Link */}
+          <div className="text-center pt-4">
+            <Link
+              to="/privacy"
+              className="text-xs text-gray-400 hover:text-gray-600 transition-colors duration-200"
+            >
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </main>
     </div>

@@ -1,3 +1,66 @@
+# Little Hearts Clothing Website
+
+A beautiful, mobile-first React website for Little Hearts Clothing, featuring a soft minimalist design with pastel backgrounds and modern typography.
+
+## Features
+
+- **Homepage (/)**: Logo display, Instagram feed embed, e-commerce launch announcement, and WhatsApp CTA
+- **About Page (/about)**: Founder story, biography, and social links
+- **Mobile-first responsive design** with Tailwind CSS
+- **Soft minimalist aesthetic** with pastel color palette (#f8f6ef)
+- **Modern Inter font** for clean typography
+- **React Router** for seamless navigation
+
+## Setup Instructions
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Add images to public folder:**
+   - Upload `LittleHearts.png` to `/public/` for the logo
+   - Upload `founder.jpg` to `/public/` for Catherine's photo
+
+3. **Configure Instagram embed:**
+   - Update the SnapWidget iframe src in HomePage.js with your actual widget ID
+   - Replace `your-instagram-widget-id` with your SnapWidget embed ID
+
+4. **Start development server:**
+   ```bash
+   npm start
+   ```
+
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## Design Features
+
+- **Pastel background**: Soft beige (#f8f6ef) for warm, welcoming feel
+- **Rounded corners**: Modern card design with backdrop blur effects
+- **WhatsApp integration**: Direct chat link to business number
+- **Instagram integration**: Embedded feed and profile links
+- **Mobile-optimized**: Clean, touch-friendly interface
+
+## Contact Links
+
+- **Business WhatsApp**: +91 9071166801
+- **Instagram**: [@littlehearts.clothing](https://www.instagram.com/littlehearts.clothing/)
+- **Founder Instagram**: [@catherinerobinson4494](https://www.instagram.com/catherinerobinson4494/)
+
+## Tech Stack
+
+- React 18
+- React Router Dom
+- Tailwind CSS
+- Inter Font (Google Fonts)
+
+---
+
+Built with ❤️ for Little Hearts Clothing
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

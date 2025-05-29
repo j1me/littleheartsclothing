@@ -5,36 +5,41 @@ const ProductGrid = () => {
   const products = [
     {
       id: 1,
-      image: './products/product1.png'
+      image: '/products/product1.jpg'
     },
     {
       id: 2,
-      image: './products/product2.png'
+      image: '/products/product2.jpg'
     },
     {
       id: 3,
-      image: './products/product3.png'
+      image: '/products/product3.jpg'
     },
     {
       id: 4,
-      image: './products/product4.png'
+      image: '/products/product4.jpg'
     },
     {
       id: 5,
-      image: './products/product5.png'
+      image: '/products/product5.jpg'
     },
     {
       id: 6,
-      image: './products/product6.png'
+      image: '/products/product6.jpg'
     },
     {
       id: 7,
-      image: './products/product7.png'
+      image: '/products/product7.jpg'
     },
     {
       id: 8,
-      image: './products/product8.png'
+      image: '/products/product8.jpg'
     }
+    // Uncomment when product9.jpg is added:
+    // {
+    //   id: 9,
+    //   image: '/products/product9.jpg'
+    // }
   ];
 
   const handleInstagramRedirect = () => {
@@ -43,9 +48,13 @@ const ProductGrid = () => {
 
   // Debug function to log image URLs
   React.useEffect(() => {
+    console.log('Current domain:', window.location.origin);
+    console.log('Current pathname:', window.location.pathname);
     console.log('PUBLIC_URL:', process.env.PUBLIC_URL);
+    console.log('NODE_ENV:', process.env.NODE_ENV);
     products.forEach(product => {
       console.log(`Product ${product.id} image path:`, product.image);
+      console.log(`Product ${product.id} full URL:`, new URL(product.image, window.location.origin).href);
     });
   });
 
@@ -63,8 +72,23 @@ const ProductGrid = () => {
                 onError={(e) => {
                   console.error('Image failed to load:', product.image);
                   console.error('Attempted URL:', e.target.src);
-                  // Fallback to placeholder
-                  e.target.src = 'https://via.placeholder.com/300x300/FFB6C1/333333?text=Little+Hearts';
+                  
+                  // Try different fallback URLs
+                  if (e.target.src.startsWith('/products/')) {
+                    // Try with process.env.PUBLIC_URL
+                    const fallbackUrl = `${process.env.PUBLIC_URL}${product.image}`;
+                    console.log('Trying fallback URL:', fallbackUrl);
+                    e.target.src = fallbackUrl;
+                  } else if (e.target.src.includes('products/')) {
+                    // Try direct domain path
+                    const directUrl = `https://littleheartsclothing.com${product.image}`;
+                    console.log('Trying direct domain URL:', directUrl);
+                    e.target.src = directUrl;
+                  } else {
+                    // Final fallback to placeholder
+                    console.log('Using placeholder image');
+                    e.target.src = 'https://via.placeholder.com/300x300/FFB6C1/333333?text=Little+Hearts';
+                  }
                 }}
                 onLoad={() => {
                   console.log('✅ Image loaded successfully:', product.image);

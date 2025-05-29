@@ -4,10 +4,12 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import DataDeletionPage from './pages/DataDeletionPage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-pastel-bg">
         <Routes>
           <Route path="/" element={<HomePage />} />

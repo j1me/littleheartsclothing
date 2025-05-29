@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/littleheartsclothing/static/css/main.fdf0735a.css",
+    "main.js": "/littleheartsclothing/static/js/main.be3a9961.js",
+    "static/js/453.50377f1b.chunk.js": "/littleheartsclothing/static/js/453.50377f1b.chunk.js",
+    "index.html": "/littleheartsclothing/index.html",
+    "main.fdf0735a.css.map": "/littleheartsclothing/static/css/main.fdf0735a.css.map",
+    "main.be3a9961.js.map": "/littleheartsclothing/static/js/main.be3a9961.js.map",
+    "453.50377f1b.chunk.js.map": "/littleheartsclothing/static/js/453.50377f1b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdf0735a.css",
+    "static/js/main.be3a9961.js"
+  ]
+}

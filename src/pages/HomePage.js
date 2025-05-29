@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductGrid from '../components/ProductGrid';
+import Navigation from '../components/Navigation';
 
 const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Navigation />
+      
       {/* Header with Logo */}
       <header className="flex justify-center py-8 px-4">
         <img 

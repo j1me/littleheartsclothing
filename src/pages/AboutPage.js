@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navigation from '../components/Navigation';
 
 const AboutPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Navigation />
+      
       {/* Header */}
       <header className="py-8 px-4">
         <div className="max-w-md mx-auto text-center">

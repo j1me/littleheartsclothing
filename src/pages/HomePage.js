@@ -8,7 +8,7 @@ const HomePage = () => {
       {/* Header with Logo */}
       <header className="flex justify-center py-8 px-4">
         <img 
-          src="/LittleHearts.png" 
+          src={`${process.env.PUBLIC_URL}/LittleHearts.png`}
           alt="Little Hearts Clothing" 
           className="h-24 md:h-32 object-contain"
         />

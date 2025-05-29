@@ -20,7 +20,7 @@ const AboutPage = () => {
           {/* Founder Image */}
           <div className="flex justify-center">
             <img 
-              src="/founder.jpg" 
+              src={`${process.env.PUBLIC_URL}/founder.jpg`}
               alt="Catherine Robinson" 
               className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-white/70"
             />

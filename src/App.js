@@ -5,7 +5,7 @@ import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/littleheartsclothing">
       <div className="min-h-screen bg-pastel-bg">
         <Routes>
           <Route path="/" element={<HomePage />} />

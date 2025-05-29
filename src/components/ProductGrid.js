@@ -5,45 +5,59 @@ const ProductGrid = () => {
   const products = [
     {
       id: 1,
-      image: `${process.env.PUBLIC_URL}/products/product1.jpg`,
+      image: `${process.env.PUBLIC_URL}/products/product1.png`,
       title: "Little Hearts Onesie",
       price: "₹599",
       category: "Newborn"
     },
     {
       id: 2,
-      image: `${process.env.PUBLIC_URL}/products/product2.jpg`,
+      image: `${process.env.PUBLIC_URL}/products/product2.png`,
       title: "Cute Baby Dress",
       price: "₹799",
       category: "0-6 months"
     },
     {
       id: 3,
-      image: `${process.env.PUBLIC_URL}/products/product3.jpg`,
+      image: `${process.env.PUBLIC_URL}/products/product3.png`,
       title: "Soft Cotton Romper",
       price: "₹699",
       category: "6-12 months"
     },
     {
       id: 4,
-      image: `${process.env.PUBLIC_URL}/products/product4.jpg`,
+      image: `${process.env.PUBLIC_URL}/products/product4.png`,
       title: "Sweet Dreams Set",
       price: "₹899",
       category: "12-18 months"
     },
     {
       id: 5,
-      image: `${process.env.PUBLIC_URL}/products/product5.jpg`,
+      image: `${process.env.PUBLIC_URL}/products/product5.png`,
       title: "Playful Jumpsuit",
       price: "₹749",
       category: "18-24 months"
     },
     {
       id: 6,
-      image: `${process.env.PUBLIC_URL}/products/product6.jpg`,
+      image: `${process.env.PUBLIC_URL}/products/product6.png`,
       title: "Adorable Overalls",
       price: "₹849",
       category: "2-3 years"
+    },
+    {
+      id: 7,
+      image: `${process.env.PUBLIC_URL}/products/product7.png`,
+      title: "Cozy Winter Outfit",
+      price: "₹999",
+      category: "6-12 months"
+    },
+    {
+      id: 8,
+      image: `${process.env.PUBLIC_URL}/products/product8.png`,
+      title: "Summer Collection",
+      price: "₹649",
+      category: "12-18 months"
     }
     // Add more products here as needed
   ];
@@ -78,6 +92,7 @@ const ProductGrid = () => {
                   // Fallback to a placeholder if image doesn't exist
                   e.target.src = 'https://via.placeholder.com/300x300/FFB6C1/333333?text=Little+Hearts';
                 }}
+                loading="lazy"
               />
               
               {/* Overlay on hover */}
